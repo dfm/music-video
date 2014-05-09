@@ -19,7 +19,7 @@
 
   // Set up the coordinates. 1280.
   var source = {x: 0, y: 0, w: 720, h: 360},
-      width = 600,
+      width = 720,
       dest = {x: 0, y: 0, w: width, h: width * source.h / source.w};
 
   var playing = false;
@@ -50,20 +50,10 @@
     current = i;
     source.x = s[0];
     source.y = s[1];
+    if (!playing) {
+      v.play();
+    }
   }
   c.onclick = do_the_magic;
-
-  // Events.
-  var button = document.getElementById("toggle");
-  function toggle_play () {
-    if (playing) {
-      button.value = "Play";
-      v.pause();
-      return;
-    }
-    button.value = "Pause";
-    v.play();
-  }
-  button.onclick = toggle_play;
 
 })();

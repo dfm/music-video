@@ -1,21 +1,25 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
     <title>Sylvan Esso</title>
+
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="player.css" type="text/css">
 
 </head>
 <body>
 
 <video height="300" id="video" hidden>
+    <source src="media/coffee.mp4"></source>
     <source src="http://bbq.dfm.io:8888/media/coffee.mp4"></source>
 </video>
 
-<canvas id="canvas" width="600" height="300">
-</canvas>
-<br>
-<input type="button" value="Play" id="toggle">
+<div class="container">
+    <div id="play">Click to play</div>
+    <canvas id="canvas" height="360" width="720"></canvas>
+</div>
 
 <script type="text/javascript" charset="utf-8" src="player.js"></script>
 

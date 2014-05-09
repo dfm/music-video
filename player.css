@@ -1,0 +1,21 @@
+body {
+    background: #000;
+    color: #fff;
+}
+
+.container {
+    width: 720px;
+    margin: 50px auto;
+}
+
+#play {
+    position: absolute;
+    text-align: center;
+    width: 720px;
+    top: 250px;
+    z-index: -1000;
+}
+
+#canvas {
+    display: block;
+}
