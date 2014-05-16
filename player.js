@@ -18,8 +18,8 @@
       ctx = c.getContext("2d");
 
   // Set up the coordinates. 1280.
-  var source = {x: 0, y: 0, w: 720, h: 360},
-      width = 720,
+  var source = {x: 0, y: 0, w: 640, h: 360},
+      width = 640,
       dest = {x: 0, y: 0, w: width, h: width * source.h / source.w};
 
   var playing = false;
@@ -39,8 +39,8 @@
 
   // Do the magic.
   var sources = [
-    [0, 0], [1280-720, 0],
-    [0, 360], [1280-720, 360]
+    [0, 0], [640, 0],
+    [0, 360], [640, 360]
   ], current = 0;
   function do_the_magic () {
     var i = Math.floor(sources.length*Math.random());
